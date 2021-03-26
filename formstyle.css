@@ -98,13 +98,6 @@ label[for="zipcode"] {
     padding-top: 25px;
 }
 
-select:first-child {
-    text-align: left;
-    font-family: 'Merriweather', serif;
-    font-size: .75em;
-    color: gray;
-}
-
 ::placeholder {
     text-align: right;
     font-style: italic;
@@ -135,6 +128,7 @@ input[type="street"]:hover,
 input[type="unit"]:hover,
 input[type="city"]:hover,
 input[type="state"]:hover,
+input[type="select"]:hover,
 input[type="zipcode"]:hover,
 textarea:hover {
     background-color: rgba(97,227, 219, .75);
@@ -147,6 +141,7 @@ input[type="street"]:focus,
 input[type="unit"]:focus,
 input[type="city"]:focus,
 input[type="state"]:focus,
+input[type="select"]:focus,
 input[type="zipcode"]:focus,
 textarea:focus {
     opacity: .25;
@@ -174,6 +169,10 @@ select {
     border-style: none;
     border-radius: 2px;
     background-color:#eff0f1;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size: .75em;
+    color: gray;
 }
 
 .choice {
