@@ -67,6 +67,7 @@ fieldset {
 }
 
 .contact-container {
+    display: inline-block;
     padding-bottom: 20px;
     border-bottom: 2px solid teal;
 }
@@ -132,6 +133,7 @@ input[type="select"]:hover,
 input[type="zipcode"]:hover,
 textarea:hover {
     background-color: rgba(97,227, 219, .75);
+    border: 2px solid teal;
 }
 
 input[type="text"]:focus,
@@ -144,7 +146,8 @@ input[type="state"]:focus,
 input[type="select"]:focus,
 input[type="zipcode"]:focus,
 textarea:focus {
-    opacity: .25;
+    background-color: rgba(97,227, 219, .25);
+    border: 2px solid;
 }
 
 textarea {
@@ -188,7 +191,7 @@ label p {
     margin-bottom: 10px;
 }
 
-input[type="zipcode"] {
+input[id="zipcode"] {
     width: 50%;
 }
 
@@ -225,7 +228,15 @@ form {
     padding-right: 0;
 }
 
-input[type="zipcode"] {
+.contact-container {
+    display: inline-block;
+}
+
+label[for="zipcode"] {
+    padding-right: 50px;
+}
+
+input[id="zipcode"] {
     width: 30%;
 }
 
