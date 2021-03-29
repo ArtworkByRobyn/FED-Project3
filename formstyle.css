@@ -194,6 +194,11 @@ select {
     font-size: .75em;
 }
 
+label[for="plain_text"] {
+    background-color: skyblue;
+    margin-bottom: 25px;;
+}
+
 .choice {
     color: grey;
     text-align: left;
@@ -217,7 +222,6 @@ label {
 
 .select-newsletter {
     color: red;
-    padding-top: 40px;
 }
 
 button {
