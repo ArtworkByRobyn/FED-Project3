@@ -8,6 +8,10 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+input {
+    border: 1px solid white;
+}
+
 html, body {
     height: 100%;
     display: block;
@@ -67,9 +71,23 @@ fieldset {
 }
 
 .contact-container {
-    display: inline-block;
-    padding-bottom: 20px;
+    padding: 15px;
     border-bottom: 2px solid teal;
+}
+
+.contact-container .flex-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info input, select {
+    height: 50px;
+    margin-bottom: 0 0 15px 0;
+}
+
+#zipcode {
+    margin-left: 0;
+    max-width: 50%;
 }
 
 legend {
@@ -96,7 +114,6 @@ label[for="state"],
 label[for="zipcode"] {
     color: grey;
     font-size: .75em;
-    padding-top: 25px;
 }
 
 ::placeholder {
@@ -162,7 +179,7 @@ select[id="state"] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 select {
@@ -183,16 +200,24 @@ select {
     padding-left: 10px;
 }
 
-label p {
+label {
     color: grey;
     font-size: .85em;
     text-align: left;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
-input[id="zipcode"] {
-    width: 50%;
+.newsletter {
+    padding: 15px;
+}
+
+.other {
+    padding-top: 25px;
+    color: darkblue;
+}
+
+.select-newsletter {
+    color: red;
+    padding-top: 40px;
 }
 
 button {
@@ -217,6 +242,21 @@ footer {
 
 @media screen and (min-width: 768px){
 
+.contact-container .flex-pair {
+    flex-direction: row;
+}    
+
+.contact-container input, select {
+    flex-grow: 1;
+    flex-basis: 75%;
+}
+
+.contact-container label {
+    flex-basis: 25%;
+    height: 30px;
+    margin-top: 15px;
+}
+
 .form-top {
     width: 75%;
     padding-top: 50px;    
@@ -228,16 +268,9 @@ form {
     padding-right: 0;
 }
 
-.contact-container {
-    display: inline-block;
-}
-
-label[for="zipcode"] {
-    padding-right: 50px;
-}
-
-input[id="zipcode"] {
-    width: 30%;
+#zipcode {
+    margin-left: 0;
+    max-width: 30%;
 }
 
 }
