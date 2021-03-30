@@ -61,7 +61,7 @@ header h1 {
 
 form {
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 20px 20px 0 20px;
   }
 
 fieldset {
@@ -71,7 +71,7 @@ fieldset {
 }
 
 .contact-container {
-    padding: 15px;
+    padding: 15p 15px 0 15px;
     border-bottom: 2px solid teal;
 }
 
@@ -88,6 +88,7 @@ fieldset {
 #zipcode {
     margin-left: 0;
     max-width: 50%;
+    margin-bottom: 50px;
 }
 
 legend {
@@ -133,7 +134,7 @@ input[type="zipcode"],
 textarea {
     width: 100%;
     padding: 10px 20px 10px 20px;
-    margin: 5px auto 20px;
+    margin: 10px auto 20px;
     border-style: none;
     border-radius: 2px;
     background-color:#eff0f1;
@@ -194,11 +195,6 @@ select {
     font-size: .75em;
 }
 
-label[for="plain_text"] {
-    background-color: skyblue;
-    margin-bottom: 25px;;
-}
-
 .choice {
     color: grey;
     text-align: left;
@@ -212,16 +208,16 @@ label {
 }
 
 .newsletter {
-    padding: 15px;
+    padding: 15px 15px 0 15px;
 }
 
 .other {
-    padding-top: 25px;
     color: darkblue;
 }
 
-.select-newsletter {
-    color: red;
+.select-news p {
+    font-weight: bold;
+    margin: 15px 0 5px 0;
 }
 
 button {
@@ -235,7 +231,6 @@ button {
 }
 
 footer {
-    padding-top: 20px;
     padding-bottom: 120px;
     text-align: center;
     font-style: italic;
@@ -268,6 +263,7 @@ footer {
 
 form {
     width: 75%;
+    padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
 }
