@@ -71,7 +71,7 @@ fieldset {
 }
 
 .contact-container {
-    padding: 15p 15px 0 15px;
+    padding: 15px 15px 0 15px;
     border-bottom: 2px solid teal;
 }
 
@@ -82,7 +82,7 @@ fieldset {
 
 .contact-info input, select {
     height: 50px;
-    margin-bottom: 0 0 15px 0;
+    margin-bottom: 15px;
 }
 
 #zipcode {
@@ -138,6 +138,7 @@ textarea {
     border-style: none;
     border-radius: 2px;
     background-color:#eff0f1;
+    transition: height 2s;
 }
 
 input[type="text"]:hover,
@@ -151,7 +152,8 @@ input[type="select"]:hover,
 input[type="zipcode"]:hover,
 textarea:hover {
     background-color: rgba(97,227, 219, .75);
-    border: 2px solid teal;
+    border: 1px solid teal;
+    height: 100px;
 }
 
 input[type="text"]:focus,
@@ -165,7 +167,7 @@ input[type="select"]:focus,
 input[type="zipcode"]:focus,
 textarea:focus {
     background-color: rgba(97,227, 219, .25);
-    border: 2px solid;
+    border: 1px solid;
 }
 
 textarea {
@@ -207,17 +209,20 @@ label {
     text-align: left;
 }
 
+.newsletter p {
+    color: grey;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+    font-size: .85em;
+    text-align: left;
+}
+
 .newsletter {
     padding: 15px 15px 0 15px;
 }
 
 .other {
     color: darkblue;
-}
-
-.select-news p {
-    font-weight: bold;
-    margin: 15px 0 5px 0;
 }
 
 button {
