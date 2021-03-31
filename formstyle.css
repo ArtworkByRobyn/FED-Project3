@@ -125,12 +125,7 @@ label[for="zipcode"] {
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
-input[type="street"],
-input[type="unit"],
-input[type="city"],
-input[type="state"],
-input[type="zipcode"],
+input[type="tel"],
 textarea {
     width: 100%;
     padding: 10px 20px 10px 20px;
@@ -143,13 +138,7 @@ textarea {
 
 input[type="text"]:hover,
 input[type="email"]:hover,
-input[type="phone"]:hover,
-input[type="street"]:hover,
-input[type="unit"]:hover,
-input[type="city"]:hover,
-input[type="state"]:hover,
-input[type="select"]:hover,
-input[type="zipcode"]:hover,
+input[type="tel"]:hover,
 textarea:hover {
     background-color: rgba(97,227, 219, .75);
     border: 1px solid teal;
@@ -158,13 +147,7 @@ textarea:hover {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="phone"]:focus,
-input[type="street"]:focus,
-input[type="unit"]:focus,
-input[type="city"]:focus,
-input[type="state"]:focus,
-input[type="select"]:focus,
-input[type="zipcode"]:focus,
+input[type="tel"]:focus,
 textarea:focus {
     background-color: rgba(97,227, 219, .25);
     border: 1px solid;
@@ -216,6 +199,19 @@ label {
     font-size: .85em;
     text-align: left;
 }
+ 
+.select-news {
+    color: grey;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+    font-size: .85em;
+    text-align: left;
+}
+
+label[for="other_topics"] {
+    display: block;
+    margin: 15px 0 5px 0;
+  }
 
 .newsletter {
     padding: 15px 15px 0 15px;
